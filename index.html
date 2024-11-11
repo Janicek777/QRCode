@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="modeToggle" onclick="toggleDarkMode()">🌙 Tryb Ciemny</button>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <input type="text" id="inputText" placeholder="Wprowadź tekst lub URL">
+        <button onclick="generateQRCode()">Generuj QR Kod</button>
+        <div id="qrCodeContainer"></div>
+        <a id="downloadButton" href="#" download="QRCode.png" style="display: none;">Pobierz QR Kod</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
